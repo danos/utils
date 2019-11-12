@@ -1,0 +1,68 @@
+Source: golang-github-danos-utils
+Section: devel
+Priority: extra
+Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
+Build-Depends:
+ debhelper (>= 9),
+ dh-golang (>= 1.18),
+ golang (>= 1.6),
+ libaudit-dev
+Standards-Version: 3.9.8
+
+Package: golang-github-danos-utils-audit-dev
+Architecture: all
+Depends: libaudit-dev, ${misc:Depends}, ${shlibs:Depends}
+Built-Using: ${misc:Built-Using}
+Description: Auditing package
+ Development files for auditing package
+
+Package: golang-github-danos-utils-exec-dev
+Architecture: all
+Depends:
+ golang-github-danos-utils-pathutil-dev,
+Built-Using: ${misc:Built-Using}
+Description: Package to run external commands
+ Development files for external commands
+
+Package: golang-github-danos-utils-natsort-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: Natural sorting package
+ Development files for natural sorting package
+
+Package: golang-github-danos-utils-os-group-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: Package for working with UNIX groups
+ Development files for working with UNIX groups
+
+Package: golang-github-danos-utils-patherr-dev
+Architecture: all
+Depends: golang-github-danos-utils-natsort-dev
+Built-Using: ${misc:Built-Using}
+Description: Package for path errors
+ Development files for path errors
+
+Package: golang-github-danos-utils-pathutil-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: Package for working with commandline paths
+ Development files for working with Vyatta commandline paths
+
+Package: golang-github-danos-utils-tsort-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: Topological sorting package
+ Development files for topological sorting package
+
+Package: golang-github-danos-utils-tty-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: Package for working with TTYs
+ Development files for working with TTYs
+
+Package: golang-github-danos-utils-args-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: Package for working with command line arguments
+ Development files for working with command line arguments
