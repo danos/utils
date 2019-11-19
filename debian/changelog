@@ -1,3 +1,9 @@
+golang-github-danos-utils (1.4) unstable; urgency=medium
+
+  * DANOS Import Master
+
+ -- Vyatta Package Maintainers <DL-vyatta-help@att.com>  Fri, 15 Nov 2019 15:46:49 +0000
+
 golang-github-danos-utils (1.3.1.1) unstable; urgency=medium
 
   * DANOS Import

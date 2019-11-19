@@ -24,6 +24,12 @@ Built-Using: ${misc:Built-Using}
 Description: Package to run external commands
  Development files for external commands
 
+Package: golang-github-danos-utils-guard-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: Package to guard against panics
+ Development files for panic guarding utilities
+
 Package: golang-github-danos-utils-natsort-dev
 Architecture: all
 Built-Using: ${misc:Built-Using}
