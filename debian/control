@@ -55,6 +55,12 @@ Built-Using: ${misc:Built-Using}
 Description: Package for working with commandline paths
  Development files for working with Vyatta commandline paths
 
+Package: golang-github-danos-utils-shell-dev
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Description: A package to aid in working with shell scripts
+ Development files for a package to aid when working with shell scripts.
+
 Package: golang-github-danos-utils-tsort-dev
 Architecture: all
 Built-Using: ${misc:Built-Using}
