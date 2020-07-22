@@ -1,3 +1,10 @@
+golang-github-danos-utils (1.5) unstable; urgency=medium
+
+  [ John Southworth ]
+  * Create a common location to for shell script helpers for Go
+
+ -- William Ivory <william.ivory@intl.att.com>  Wed, 22 Jul 2020 11:39:24 +0100
+
 golang-github-danos-utils (1.4) unstable; urgency=medium
 
   * DANOS Import Master
