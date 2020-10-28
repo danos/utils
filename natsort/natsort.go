@@ -1,4 +1,4 @@
-// Copyright (c) 2019, AT&T Intellectual Property. All rights reserved.
+// Copyright (c) 2019-2020 AT&T Intellectual Property. All rights reserved.
 //
 // Copyright (c) 2014 by Brocade Communications Systems, Inc.
 // All rights reserved.
@@ -59,12 +59,15 @@ func Less(ain, bin string) (out bool) {
 		}
 		if aint, err := strconv.Atoi(a); err == nil {
 			if bint, err := strconv.Atoi(b); err == nil {
+				if (aint == bint) {
+					continue
+				}
 				return aint < bint
 			}
 		}
 		return ain < bin
 	}
-	return true
+	return ain <= bin // use lexical comparison
 }
 
 func Sort(sl []string) {
