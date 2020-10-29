@@ -1,4 +1,4 @@
-// Copyright (c) 2019, AT&T Intellectual Property. All rights reserved.
+// Copyright (c) 2019-2020 AT&T Intellectual Property. All rights reserved.
 //
 // Copyright (c) 2015 by Brocade Communications Systems, Inc.
 // All rights reserved.
@@ -199,6 +199,12 @@ func TestTheSameString(t *testing.T) {
 func TestMultiNumber(t *testing.T) {
 	a := "default1a2"
 	b := "default1a3"
+	testLess(t, a, b)
+	testNotLess(t, b, a)
+}
+
+func TestLessPrecedingZero(t *testing.T) {
+	a, b := "a0", "a00"
 	testLess(t, a, b)
 	testNotLess(t, b, a)
 }
