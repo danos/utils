@@ -1,3 +1,11 @@
+golang-github-danos-utils (1.6) unstable; urgency=medium
+
+  [ Nachiketa Prachanda ]
+  * test numbers with preceding zeros
+  * natsort: fix Less for number with preceding zeros
+
+ -- William Ivory <william.ivory@intl.att.com>  Tue, 23 Feb 2021 13:46:53 +0000
+
 golang-github-danos-utils (1.5) unstable; urgency=medium
 
   [ John Southworth ]
