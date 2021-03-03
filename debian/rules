@@ -3,6 +3,8 @@
 export DH_OPTIONS
 export DH_GOPKG := github.com/danos/utils
 
+GOBUILDDIR := _build
+
 # Uncomment to enable race detection
 # This should only be done for local test builds; tests run very slow
 # See https://golang.org/doc/articles/race_detector.html#Runtime_Overheads
@@ -23,6 +25,6 @@ override_dh_auto_test:
 # We do not vet vendor code
 vet:
 	if go doc cmd/vet >/dev/null 2>&1; then \
-		go tool vet $$(find . -type f -name \*.go | xargs dirname | \
-			sort -u | grep -v "/vendor/"); \
+		GOPATH=$(CURDIR)/$(GOBUILDDIR) go vet $$(find . -type f -name \*.go | \
+		xargs dirname | sort -u | grep -v "/vendor/"); \
 	fi
